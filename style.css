@@ -21,3 +21,34 @@ body{
     color: #EF4444;
     text-shadow: #EF4444 0 0 8px;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+main{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main:nth-child(1){
+    display: flex;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
