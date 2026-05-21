@@ -53,6 +53,13 @@ header div {
     gap: 1rem;
 }
 
+header div div{
+    width: 0.15rem;
+    height: 2rem;
+    background-color: #FEE2E2;
+    border-radius: 2rem;
+}
+
 main {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
