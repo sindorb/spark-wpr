@@ -12,8 +12,7 @@ body {
     font-family: 'Playfair Display', sans-serif;
     color: #FEE2E2;
     background-color: black;
-    height: 100dvh;
-    width: 100dvw;
+    min-height: 100dvh;
     display: grid;
     grid-template-rows: 60px 1fr 40px;
     font-size: 1.25rem;
@@ -62,8 +61,8 @@ header div div{
 
 main {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, minmax(100px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
