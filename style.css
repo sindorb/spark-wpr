@@ -69,6 +69,7 @@ main {
 
 section {
     padding: 1rem;
+    -outline: auto 1px #FEE2E2;
 }
 
 section:nth-child(1) {
@@ -86,11 +87,6 @@ section:nth-child(1) div{
 section:nth-child(1) div img {
     height: 4.5rem;
     object-fit: contain;
-}
-
-section:nth-child(1) p {
-    position: relative;
-    left: 10rem;
 }
 
 footer {
