@@ -46,17 +46,51 @@ header {
     padding: 1rem;
 }
 
-header div {
+.hamburger {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 10;
+    padding-top: 0.5rem;
 }
 
-header div div {
-    width: 0.15rem;
-    height: 2rem;
+.hamburger span {
+    width: 100%;
+    height: 8px;
     background-color: #FEE2E2;
-    border-radius: 2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #F87171;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #FEE2E2;
+    color: #cc5d5d;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-menu.active {
+    right: 0;
 }
 
 main {
