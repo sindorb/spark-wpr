@@ -30,7 +30,7 @@ body::after {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 
 .redden,
@@ -119,15 +119,16 @@ section:nth-child(1) {
     justify-content: center;
 }
 
-section:nth-child(1) div {
+.title-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    padding-top: 3rem;
 }
 
-section:nth-child(1) div img {
-    height: 4.5rem;
+.logo {
+    height: 4rem;
     object-fit: contain;
 }
 
