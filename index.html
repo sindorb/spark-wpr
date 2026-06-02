@@ -19,7 +19,7 @@
     </nav>
     <header>
         <div>
-            <p>Valuta</p>
+            <p class="score-display">Bodovi: 0</p>
         </div>
         <div class="hamburger">
             <span></span>
@@ -28,31 +28,43 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="title-logo">
-                <h1>SPARK</h1>
-                <img src="assets/spark-logo.png" alt="" class="logo">
-            </div>
-            <p>Neka igre <span class="redden">započnu</span>.</p>
-        </section>
-        <section>
-            <p>Dobrodošli u Spark! Zaigrajte mini igre i skupljajte bodove za stikere koje možete postaviti na
-                StickerBoard! Postoje četiri mini igre: Košara, Klik, Cvjetovi, Parovi. Svaki od njih donosi različite
-                izazove koje treba savladati. <br><br> Ovdje možete izabrati jednu od njih, ali prije svega,
-                registrirajte se da biste mogli spremiti vaše podatke i koristiti StickerBoard!</p>
-        </section>
-        <section>
-            <a href="kosara.html"><div><img src="assets/basket.png" alt="Košara"></div></a>
-            <a href="parovi.html"><div><img src="assets/puzzle.png" alt="Slagalica"></div></a>
-            <a href="klik.html"><div><img src="assets/mouse.png" alt="Miš"></div></a>
-            <a href="cvjetovi.html"><div><img src="assets/flower.png" alt="Cvijet"></div></a>
-        </section>
+        <div class="grid-container">
+            <section>
+                <div class="title-logo">
+                    <h1>SPARK</h1>
+                    <img src="assets/spark-logo.png" alt="" class="logo">
+                </div>
+                <p>Neka igre <span class="redden">započnu</span>.</p>
+            </section>
+            <section>
+                <p>Dobrodošli u Spark! Zaigrajte mini igre i skupljajte bodove za stikere koje možete postaviti na
+                    StickerBoard! Postoje četiri mini igre: Košara, Klik, Cvjetovi, Parovi. Svaki od njih donosi
+                    različite
+                    izazove koje treba savladati. <br><br> Ovdje možete izabrati jednu od njih, ali prije svega,
+                    registrirajte se da biste mogli spremiti vaše podatke i koristiti StickerBoard!</p>
+            </section>
+            <section>
+                <a href="kosara.html">
+                    <div><img src="assets/basket.png" alt="Košara"></div>
+                </a>
+                <a href="parovi.html">
+                    <div><img src="assets/puzzle.png" alt="Slagalica"></div>
+                </a>
+                <a href="klik.html">
+                    <div><img src="assets/mouse.png" alt="Miš"></div>
+                </a>
+                <a href="cvjetovi.html">
+                    <div><img src="assets/flower.png" alt="Cvijet"></div>
+                </a>
+            </section>
+        </div>
     </main>
     <footer>
         <p><span class="redden">SPARK</span> 2026. sva prava pridržana.</p>
     </footer>
 
     <script src="scripts/index.js"></script>
+    <script src="scripts/klik.js"></script>
 </body>
 
 </html>

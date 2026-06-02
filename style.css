@@ -101,11 +101,25 @@ header {
 }
 
 main {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     grid-template-rows: repeat(2, minmax(100px, 1fr));
     gap: 1rem;
-    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
@@ -168,6 +182,28 @@ section:nth-child(3) a div:hover {
 section:nth-child(3) a div img {
     height: 90%;
     width: 90%;
+}
+
+#klik-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto;
+    transition: background-color 0.2s;
+    outline: 10px solid black;
+}
+
+.score-display {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 20px;
 }
 
 footer {
