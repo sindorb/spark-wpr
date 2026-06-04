@@ -198,13 +198,30 @@ section:nth-child(3) a div img {
 }
 
 .score-display {
-    text-align: center;
     font-size: 1.2rem;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5rem;
     border-radius: 20px;
 }
+
+#cvjetovi-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.cvjet {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.cvjet:hover {
+    transform: scale(1.15);
+}
+
 
 footer {
     display: flex;

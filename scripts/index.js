@@ -10,3 +10,8 @@ document.querySelectorAll(".nav-menu a").forEach(link => {
         navMenu.classList.remove("active");
     });
 });
+
+var klikScore = parseInt(localStorage.getItem("klik-score")) || 0;
+var cvjetoviScore = parseInt(localStorage.getItem("cvjetovi-score")) || 0;
+
+document.getElementById("valuta-display").textContent = "Bodovi: " + (klikScore + cvjetoviScore);
