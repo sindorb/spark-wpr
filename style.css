@@ -14,7 +14,7 @@ body {
     background-color: black;
     min-height: 100dvh;
     display: grid;
-    grid-template-rows: 60px 1fr 40px;
+    grid-template-rows: auto 1fr 40px;
     font-size: 1.25rem;
 }
 
@@ -107,6 +107,7 @@ main {
 }
 
 .grid-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     grid-template-rows: repeat(2, minmax(100px, 1fr));
@@ -201,8 +202,9 @@ section:nth-child(3) a div img {
     font-size: 1.2rem;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
+    margin-bottom: 1rem;
 }
 
 #cvjetovi-main {
@@ -222,10 +224,130 @@ section:nth-child(3) a div img {
     transform: scale(1.15);
 }
 
+#parovi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 1rem;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    perspective: 600px;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.card-front {
+    background-color: #FEE2E2;
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    background-color: #F87171;
+    outline: 4px solid #EF4444;
+}
+
+.card.flipped .card-front {
+    transform: rotateY(0deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.matched .card-front {
+    background-color: #86efac;
+    transform: rotateY(0deg);
+}
+
+.card.matched .card-back {
+    transform: rotateY(-180deg);
+}
+
+#kosara-canvas {
+    border: 3px solid #F87171;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+}
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        height: 2.5rem;
+    }
+
+    .title-logo {
+        padding-top: 1rem;
+    }
+
+    header {
+        padding: 0.75rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    section:nth-child(3) {
+        grid-column: 1 / 2;
+    }
+
+    section:nth-child(3) a div {
+        width: 140px;
+        height: 140px;
+        margin: 0.5rem;
+    }
+
+    #parovi-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding: 0.5rem;
+    }
+
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 1.8rem;
+    }
+
+    #kosara-canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    #klik-button {
+        width: 90px;
+        height: 90px;
+    }
 }
